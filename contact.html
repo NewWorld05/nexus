@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Group Premium</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+<style>
+  /* Custom CSS */
+  body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+  }
+
+  /* Hero Section Style */
+  .hero-section {
+    position: relative;
+    background-image: url('https://via.placeholder.com/1600x800');
+    /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+                overflow-x: hidden;
+
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+                overflow-x: hidden;
+
+  }
+
+  .hero-overlay h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+                overflow-x: hidden;
+
+  }
+
+  .hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+                overflow-x: hidden;
+
+  }
+
+  .hero-overlay .btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+                overflow-x: hidden;
+
+  }
+
+  /* Initially transparent navbar */
+  .navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+                overflow-x: hidden;
+
+  }
+
+  /* Navbar style when scrolled */
+  .navbar-scrolled {
+    background-color: gray !important;
+                overflow-x: hidden;
+
+  }
+
+  /* Styling for navbar links */
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    color: white;
+                overflow-x: hidden;
+
+  }
+
+  
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust hero section for tablets and smaller devices */
+    .hero-overlay h1 {
+      font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .hero-overlay p {
+      font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .hero-section {
+      height: 70vh; /* Reduce height for smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1rem; /* Adjust navbar link size */
+    }
+  }
+
+  @media (max-width: 576px) {
+    /* Adjust hero section for phones */
+    .hero-overlay h1 {
+      font-size: 2rem; /* Further reduce font size */
+    }
+
+    .hero-overlay p {
+      font-size: 0.9rem; /* Further reduce paragraph size */
+    }
+
+    .hero-section {
+      height: 60vh; /* Further reduce height for phones */
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.9rem; /* Adjust navbar link size for phones */
+    }
+
+    /* Adjust form layout for phones */
+    .contact-section .row .col {
+      margin-bottom: 15px; /* Add spacing between form fields */
+    }
+
+    button {
+      font-size: 0.9rem; /* Adjust button font size */
+    }
+  }
+  .contact-section {
+    padding: 50px 0;
+                overflow-x: hidden;
+
+  }
+
+  .office-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+                overflow-x: hidden;
+
+  }
+
+  /* Footer */
+  .footer-section {
+    background-color: #808080;
+                overflow-x: hidden;
+
+  }
+
+  .footer-section a:hover {
+    color: #ffffff !important;
+                overflow-x: hidden;
+
+  }
+
+  .footer-section h6 {
+    margin-bottom: 1rem;
+                overflow-x: hidden;
+
+  }
+
+  .footer-section .social-icons i {
+    font-size: 18px;
+    transition: color 0.3s;
+                overflow-x: hidden;
+
+  }
+
+  .footer-section .social-icons i:hover {
+    color: #0d6efd;
+                overflow-x: hidden;
+
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://via.placeholder.com/150" alt="Logo" width="150"> <!-- Replace with your logo -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section" data-aos="fade-down">
+    <div class="hero-overlay" data-aos="fade-in">
+      <h1>Nexus Group Premium</h1>
+      <p>Empowering Businesses,
+        Enhancing Communities</p>
+    </div>
+  </section>
+
+
+<div class="container contact-section">
+  <div class="row">
+    <!-- Map Section -->
+    <div class="col-md-6 col-sm-12 mb-4" data-aos="fade-right">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093704!2d144.95373531531595!3d-37.81627927975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f8a3d9%3A0x1a2b3c4d5e6f7g8h!2sExample%20Location!5e0!3m2!1sen!2sus!4v1632920562182!5m2!1sen!2sus"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="col-md-6 col-sm-12" data-aos="fade-left">
+      <h3 class="text-center text-md-start" data-aos="fade-up">Get in touch</h3>
+      <form>
+        <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <div class="row mb-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+            <input type="text" class="form-control" placeholder="Your Phone">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+        </div>
+        <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
+          <input type="text" class="form-control" placeholder="Subject">
+        </div>
+        <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
+          <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100" data-aos="zoom-in" data-aos-delay="500">Send
+          message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="footer-section text-white pt-5 pb-4" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and About -->
+        <div class="col-md-3 mb-4" data-aos="fade-right">
+          <img src="logo.png" alt="Logo" class="mb-3" width="70" />
+          <p>
+            Velit facilisi senectus velit elementum. Consequat vel arcu feugiat dui eu tempor pretium at porta.
+            Dui pellentesque sagittis...
+          </p>
+          <p class="fw-bold mb-1">Subscribe Us</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook text-white me-3"></i></a>
+            <a href="#"><i class="fab fa-instagram text-white me-3"></i></a>
+            <a href="#"><i class="fab fa-twitter text-white"></i></a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="col-md-2 mb-4" data-aos="fade-up">
+          <h6 class="fw-bold">Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Agriculture</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Logistics</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Cleaning</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Security</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Air Conditioning</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">WiFi Installation</a></li>
+          </ul>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-md-2 mb-4" data-aos="fade-up">
+          <h6 class="fw-bold">Useful links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Projects</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">F.A.Q</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-3 mb-4" data-aos="fade-left">
+          <h6 class="fw-bold">Address</h6>
+          <p class="text-white-50 mb-1">8592 Fairground</p>
+          <p class="text-white-50 mb-1">Durban, 32303</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-2 mb-4" data-aos="fade-left">
+          <h6 class="fw-bold">Email</h6>
+          <p class="text-white-50">nexus@gmail.com</p>
+          <h6 class="fw-bold mt-3">Phone</h6>
+          <p class="text-white-50">(071) 267-3634</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 border-top pt-3 text-white-50 small">
+        ©Copyright Nexus Group Premium 2025 | All rights reserved | Design by KZDsolutions
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // JavaScript for Expand All functionality
+    document.getElementById('expandBtn').addEventListener('click', function () {
+      var hiddenServices = document.querySelectorAll('.service-card:not(.show)');
+      hiddenServices.forEach(function (service) {
+        service.classList.add('show');
+      });
+      document.getElementById('expandBtn').style.display = 'none'; // Hide the button after expanding
+    });
+  </script>
+
+
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether the animation should only happen once
+    });
+  </script>
+
+  <script>
+
+
+    // Listen for scroll events
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+
+      if (window.scrollY > 0) {
+        // Add the class when scrolling
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        // Remove the class when at the top of the page
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+
+
+  </script>
+
+</body>
+
+</html>
