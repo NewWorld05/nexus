@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="about.css"> -->
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
@@ -25,7 +26,7 @@
         /* Hero Section Style */
         .hero-section {
             position: relative;
-            background-image: url('https://via.placeholder.com/1600x800');
+            background-image: url('images/about-banner.jpeg');
             /* Replace with your hero image */
             background-size: cover;
             background-position: center;
@@ -103,190 +104,219 @@
 
 
 
-
-
-        /* .navbar-nav .nav-link {
-            font-size: 1.1rem;
-            padding: 10px 20px;
-        } */
-
-        /* Who Are We Section */
-        .who-are-we-section {
-            padding: 50px 0;
-            background-color: #f8f9fa;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section img {
-            max-width: 100%;
-            border-radius: 10px;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section .text-content {
-            flex: 1;
-            padding-right: 30px;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-                        overflow-x: hidden;
-
-        }
-
-        /* Services Section */
-.services-section {
-    background-color: #f8f9fa;
-                overflow-x: hidden;
-
+/* Our Team Section */
+.our-team {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* Service Card Styling */
-.service-card {
-    position: relative;
-    border: none;
-    overflow: hidden;
-    border-radius: 10px;
-                overflow-x: hidden;
-
+.our-team-section-title {
+    color: #808080;
+    font-family: "AlbertSans-SemiBold", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
-.service-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-                overflow-x: hidden;
-
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Overlay Effect */
-.card-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+.team-member {
+    background: #ffffff;
     padding: 20px;
-    transition: background 0.3s ease-in-out;
-                overflow-x: hidden;
-
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.card-title {
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.team-info {
+    margin-top: 15px;
+}
+
+.team-info h4 {
+    color: #000d51;
+    font-family: "AlbertSans-SemiBold", sans-serif;
     font-size: 20px;
-    font-weight: bold;
-                overflow-x: hidden;
-
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-                overflow-x: hidden;
-
+.team-info p {
+    color: rgba(0, 13, 81, 0.6);
+    font-family: "AlbertSans-Regular", sans-serif;
+    font-size: 16px;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-                overflow-x: hidden;
 
+
+/* Who We Are Section */
+.who-we-are {
+    background-color: #eeeeee;
 }
 
-        /* Why Choose Us Section */
-.why-choose-us {
-    padding: 60px 0;
+.who-we-are-title {
+    color: #808080;
+    font-family: "AlbertSans-SemiBold", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.who-we-are h3 {
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+.who-we-are-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 13, 81, 0.8);
+}
+
+.who-we-are img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*What We Do Section */
+.what-we-do-section {
     background-color: #ffffff;
-                overflow-x: hidden;
-
-}
-
-.why-choose-us h3 {
-    color: #333;
-                overflow-x: hidden;
-
-}
-
-.why-choose-us .btn {
-    background-color: #007bff;
+  }
+  
+  .what-we-do-section-title {
+    color: #808080;
+    font-family: "AlbertSans-SemiBold", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .section-description,
+  .commitment {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+  }
+  
+  .services-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services-list li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+  }
+  
+  .btn-primary {
+    background-color: #2460fd;
     border: none;
-                overflow-x: hidden;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
+
+/* Pioneering Excellence Section */
+
+.pioneering-excellence {
+    background-color: #eeeeee;
+}
+  
+.the-future-of-nexus-group-section-title {
+    color: #808080;
+    font-family: "AlbertSans-SemiBold", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+  
+.section-description {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+}
+  
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.why-choose-us .btn:hover {
-    background-color: #0056b3;
-                overflow-x: hidden;
 
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-                overflow-x: hidden;
-
-}
-
-.testimonials .row {
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                overflow-x: hidden;
-
-}
-
-.testimonials h3 {
-    color: #333;
-                overflow-x: hidden;
-
-}
-
-.testimonials .fs-1 {
-    font-size: 3rem;
-    color: #007bff;
-                overflow-x: hidden;
-
+/* News and Events Section */
+.news-and-events {
+    background-color: #ffffff;
 }
 
 
-
-
-
-/* News Section */
-.news-section h2 {
-  font-size: 28px;
-              overflow-x: hidden;
-
+.news-and-events-title {
+    color: #808080;
+    font-family: "AlbertSans-SemiBold", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
-.news-card h6 {
-  font-size: 16px;
-  color: #000;
-              overflow-x: hidden;
-
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-body h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000d51;
+}
+
+.card-body a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+
+
 
 /* Footer */
 .footer-section {
@@ -347,7 +377,7 @@
                     <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="border: 1px solid white;">Get in Touch</a>
+                        <a class="nav-link" href="contact.html" style="border: 1px solid white; border-radius: 10%;">Get in Touch</a>
                     </li>
                 </ul>
             </div>
@@ -361,6 +391,225 @@
         <h1>About Us</h1>
     </div>
 </section>
+
+
+<!-- Our Team Section -->
+<section class="our-team">
+    <div class="container">
+        <h3 class="our-team-section-title">Our Team of Experts</h3>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/romeo.jpeg" alt="Romeo Smith">
+                <div class="team-info">
+                    <h4>Romeo Smith</h4>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/allison.jpeg" alt="Allyson Blair">
+                <div class="team-info">
+                    <h4>Allyson Blair</h4>
+                    <p>Investor Response Assistant</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/jack.jpeg" alt="Jackson Mahoney">
+                <div class="team-info">
+                    <h4>Jackson Mahoney</h4>
+                    <p>Chief Factors Coordinator</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/kara.jpeg" alt="Kara Hawkins">
+                <div class="team-info">
+                    <h4>Kara Hawkins</h4>
+                    <p>Product Quality Strategist</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/valerie.jpeg" alt="Valeria Bolton">
+                <div class="team-info">
+                    <h4>Valeria Bolton</h4>
+                    <p>Global Interactions Agent</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/john.jpeg" alt="Johnathon Crosby">
+                <div class="team-info">
+                    <h4>Johnathon Crosby</h4>
+                    <p>Investor Response Assistant</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/derick.jpeg" alt="Derick Fry">
+                <div class="team-info">
+                    <h4>Derick Fry</h4>
+                    <p>Product Quality Strategist</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/erick.jpeg" alt="Erick Taylor">
+                <div class="team-info">
+                    <h4>Erick Taylor</h4>
+                    <p>Chief Factors Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Who We Are Section -->
+<section class="who-we-are py-5">
+    <div class="container">
+        <!-- Title -->
+        <h3 class="who-we-are-title fw-semibold text-center mb-4">Nexus Logistics</h3>
+        <div class="row align-items-start">
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="images/who we are.jpeg" alt="Who we are" class="img-fluid rounded shadow">
+            </div>
+            <!-- Text Content Column -->
+            <div class="col-md-6">
+               
+                <p class="who-we-are-text">
+                    Nexus Group was founded in 2022 by a visionary 
+                    economics student with a passion for innovation and 
+                    community impact. What started as a bold venture 
+                    focused on revolutionizing agriculture has quickly 
+                    evolved into a dynamic and diverse enterprise.
+                </p>
+                <p class="who-we-are-text">
+                    Our team is driven by a strong sense of purpose and the 
+                    desire to offer practical solutions across various 
+                    sectors, always with an eye on sustainability and 
+                    efficiency. We believe in growth, not just for our 
+                    company, but for the communities we serve. Nexus 
+                    Group is dedicated to creating value, fostering 
+                    collaboration, and building a brighter future.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+
+
+<!-- What We Do Section -->
+<section class="what-we-do-section py-5">
+    <div class="container">
+
+        <!-- Title -->
+        <h2 class="what-we-do-section-title text-center mb-4">What We Do</h2>
+        <div class="row align-items-start">
+
+        <!-- Text Content -->
+        <div class="col-lg-6">
+        
+          <p class="section-description">
+            At Nexus Group, we provide a wide range of services designed to meet
+            the evolving needs of modern businesses and households. Our divisions
+            span multiple industries, including:
+          </p>
+          <ul class="services-list">
+            <li><strong>Agriculture:</strong> Sustainable solutions to enhance productivity.</li>
+            <li><strong>Logistics:</strong> Streamlining transportation & supply chains.</li>
+            <li><strong>Security:</strong> Advanced security solutions for homes & businesses.</li>
+            <li><strong>Air Conditioner Installation:</strong> Climate control & maintenance.</li>
+            <li><strong>WiFi Services:</strong> Fast, secure internet solutions.</li>
+            <li><strong>Cleaning Services:</strong> High-quality cleaning for residential & commercial spaces.</li>
+          </ul>
+          <p class="commitment">
+            Our commitment to excellence drives us to continuously expand and diversify, 
+            aiming to meet the unique needs of each customer.
+          </p>
+          <a href="services.html" class="btn btn-primary">Learn More</a>
+        </div>
+  
+        <!-- Image -->
+        <div class="col-lg-6 text-center">
+          <img src="images/what-we-do.jpeg" alt="Our Services" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<!-- Pioneering Excellence Section -->
+<section class="pioneering-excellence py-5">
+    <div class="container">
+        <!-- Title -->
+        <h2 class="the-future-of-nexus-group-section-title text-center mb-4">The Future of Nexus Group</h2>
+
+        <div class="row align-items-start">
+            <!-- Image on the Left -->
+            <div class="col-lg-6 text-center">
+                <img src="images/pioneering-image.jpeg" alt="Future of Nexus Group" class="img-fluid rounded">
+            </div>
+
+            <!-- Text on the Right -->
+            <div class="col-lg-6">
+                <p class="section-description">
+                    Nexus Group is committed to growth, innovation, and sustainability. We aim to expand our services,
+                    integrate cutting-edge technology, and adopt eco-friendly practices while maintaining our high standards
+                    of excellence. With a focus on customer needs and global aspirations, we are shaping a smarter, more
+                    efficient, and sophisticated future. Join us on this journey toward industry transformation.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+  
+
+<!-- News and Events Section -->
+<section class="news-and-events py-5">
+    <div class="container">
+        <h2 class="news-and-events-title text-center fw-semibold">News and Events</h2>
+        <div class="row mt-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images/greenhouse.jpeg" class="card-img-top img-fluid" alt="Sustainable Growth">
+                    <div class="card-body">
+                        <p class="text-muted small">25.01.24 / Nexus Premium Group</p>
+                        <h5 class="text-dark">New sustainable growth techniques</h5>
+                        <a href="#" class="text-primary">Read more &gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images/worldwide-image.jpeg" class="card-img-top img-fluid" alt="International Efforts">
+                    <div class="card-body">
+                        <p class="text-muted small">25.01.24 / Nexus Premium Group</p>
+                        <h5 class="text-dark">Our international efforts are finally showing off</h5>
+                        <a href="#" class="text-primary">Read more &gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images/project-banner.jpeg" class="card-img-top img-fluid" alt="Cleaning Services">
+                    <div class="card-body">
+                        <p class="text-muted small">25.01.24 / Nexus Premium Group</p>
+                        <h5 class="text-dark">We now clean residences at any time you call</h5>
+                        <a href="#" class="text-primary">Read more &gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
 
 
 

@@ -25,7 +25,7 @@
   /* Hero Section Style */
   .hero-section {
     position: relative;
-    background-image: url('https://via.placeholder.com/1600x800');
+    background-image: url('images/project-banner.jpeg');
     /* Replace with your hero image */
     background-size: cover;
     background-position: center;
@@ -165,6 +165,135 @@
 
   }
 
+
+
+  /* Previous Projects */
+
+.latest-projects,
+.latest-projects * {
+  box-sizing: border-box;
+}
+.latest-projects {
+  padding: 60px 182px 120px 182px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1169px;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.frame-435 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.latest-projects2 {
+  color: #000000;
+  text-align: center;
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.img {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.text2 {
+  background: #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.building-business-agility-begins-with-culture {
+  color: #000d51;
+  text-align: left;
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+.fringilla-lacus-eu-porta-neque-turpis-mauris-nisi-enim-sed-placerat-aliquam-lectus-elit {
+  color: rgba(0, 13, 81, 0.6);
+  text-align: left;
+  font-family: "AlbertSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.libero-lectus-viverra-bibendum-pellentesque-rhoncus-donec-fermentum-arcu-ut {
+  color: rgba(0, 13, 81, 0.6);
+  text-align: left;
+  font-family: "AlbertSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+
+
   /* Footer */
   .footer-section {
     background-color: #808080;
@@ -236,46 +365,78 @@
     </div>
   </section>
 
-  <section class="projectss">
-    <div class="latest-projects">
-        <div class="text">
-          <div class="frame-435">
-            <div class="latest-projects2">Latest projects</div>
+<!-- Latest Projects -->
+<section class="projects py-5">
+  <div class="container">
+    <!-- Heading -->
+    <h2 class="text-center text-secondary fw-bold mb-4">Latest Projects</h2>
+
+    <div class="row">
+      <h2 class="text-center text-secondary fw-bold mb-4">Project 1</h2>
+      <!-- Before Image & Description -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="images/warehouse-before.jpeg" class="card-img-top img-fluid" alt="Before Image">
+          <div class="card-body">
+            <h5 class="card-title">Building Business Agility Begins with Culture</h5>
+            <p class="card-text">
+              Fringilla lacus eu porta neque turpis mauris nisi. Enim sed placerat
+              aliquam lectus elit.
+            </p>
           </div>
         </div>
-        <div class="cards">
-          <div class="card">
-            <img class="img" src="img0.png" />
-            <div class="text2">
-              <div class="building-business-agility-begins-with-culture">
-                Building business agility begins with culture
-              </div>
-              <div
-                class="fringilla-lacus-eu-porta-neque-turpis-mauris-nisi-enim-sed-placerat-aliquam-lectus-elit"
-              >
-                Fringilla lacus eu porta neque turpis mauris nisi. Enim sed placerat
-                aliquam lectus elit
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="img1.png" />
-            <div class="text2">
-              <div class="building-business-agility-begins-with-culture">
-                Building business agility begins with culture
-              </div>
-              <div
-                class="libero-lectus-viverra-bibendum-pellentesque-rhoncus-donec-fermentum-arcu-ut"
-              >
-                Libero lectus viverra bibendum pellentesque rhoncus donec fermentum
-                arcu ut
-              </div>
-            </div>
+      </div>
+
+      <!-- After Image & Description -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="images/warehouse-after.jpeg" class="card-img-top img-fluid" alt="After Image">
+          <div class="card-body">
+            <h5 class="card-title">Building Business Agility Begins with Culture</h5>
+            <p class="card-text">
+              Libero lectus viverra bibendum pellentesque rhoncus donec fermentum
+              arcu ut.
+            </p>
           </div>
         </div>
       </div>
       
-  </section>
+    </div><br>
+
+    <div class="row">
+      <h2 class="text-center text-secondary fw-bold mb-4">Project 2</h2>
+      <!-- Before Image & Description -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="images/warehouse-before.jpeg" class="card-img-top img-fluid" alt="Before Image">
+          <div class="card-body">
+            <h5 class="card-title">Building Business Agility Begins with Culture</h5>
+            <p class="card-text">
+              Fringilla lacus eu porta neque turpis mauris nisi. Enim sed placerat
+              aliquam lectus elit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- After Image & Description -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="images/warehouse-after.jpeg" class="card-img-top img-fluid" alt="After Image">
+          <div class="card-body">
+            <h5 class="card-title">Building Business Agility Begins with Culture</h5>
+            <p class="card-text">
+              Libero lectus viverra bibendum pellentesque rhoncus donec fermentum
+              arcu ut.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
 
 
 

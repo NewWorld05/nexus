@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="services.css">
+        <!-- <link rel="stylesheet" href="services.css"> -->
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
@@ -103,191 +103,280 @@
     }
 
 
+/* .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+} */
+
+ 
+
+/* Overview Section */
+.overview-content, 
+.overview-content * {
+  box-sizing: border-box;
+}
+
+.content {
+  background: #ffffff;
+  padding: 40px 182px;
+  flex-shrink: 0;
+  height: 684px;
+  position: relative;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overview-heading {
+  color: #808080;
+  text-align: left;
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 0; /* Remove any extra top margin */
+}
+
+.overview-content-text {
+  color: #808080;
+  text-align: left;
+  font-family: "AlbertSans-Medium", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Remove absolute positioning and make text align naturally with content */
+@media (max-width: 767px) {
+  .overview-heading {
+    font-size: 2rem;
+  }
+
+  .overview-content-text {
+    font-size: 1rem;
+  }
+}
 
 
-
-        /* .navbar-nav .nav-link {
-            font-size: 1.1rem;
-            padding: 10px 20px;
-        } */
-
-        /* Who Are We Section */
-        .who-are-we-section {
-            padding: 50px 0;
-            background-color: #f8f9fa;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section img {
-            max-width: 100%;
-            border-radius: 10px;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section .text-content {
-            flex: 1;
-            padding-right: 30px;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-                        overflow-x: hidden;
-
-        }
-
-        .who-are-we-section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-                        overflow-x: hidden;
-
-        }
-
-        /* Services Section */
+/* General Section Styling */
 .services-section {
-    background-color: #f8f9fa;
-                overflow-x: hidden;
-
+  background-color: #ffffff;
+  padding: 5% 0; /* Add vertical padding */
 }
 
-/* Service Card Styling */
-.service-card {
-    position: relative;
-    border: none;
-    overflow: hidden;
-    border-radius: 10px;
-                overflow-x: hidden;
-
+/* Title Styling */
+.services-we-offer-section-title {
+  color: #808080;
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-.service-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-                overflow-x: hidden;
-
+/* Service Content Styling */
+.service-content {
+  width: 90%; /* Use a flexible width */
+  margin: 0 auto; /* Center the content */
 }
 
-/* Overlay Effect */
-.card-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 20px;
-    transition: background 0.3s ease-in-out;
-                overflow-x: hidden;
-
+/* Service Content Heading Styling */
+.service-content-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.card-title {
-    font-size: 20px;
-    font-weight: bold;
-                overflow-x: hidden;
-
+.service-content-heading h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-                overflow-x: hidden;
-
+/* Logo Styling */
+.service-logo {
+  width: 10%; /* Set logo width based on the container */
+  max-width: 60px; /* Ensure logos don’t become too large */
+  height: auto;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-                overflow-x: hidden;
-
-}
-
-        /* Why Choose Us Section */
-.why-choose-us {
-    padding: 60px 0;
-    background-color: #ffffff;
-                overflow-x: hidden;
-
-}
-
-.why-choose-us h3 {
-    color: #333;
-                overflow-x: hidden;
-
-}
-
-.why-choose-us .btn {
-    background-color: #007bff;
-    border: none;
-                overflow-x: hidden;
-
-}
-
-.why-choose-us .btn:hover {
-    background-color: #0056b3;
-                overflow-x: hidden;
-
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-                overflow-x: hidden;
-
-}
-
-.testimonials .row {
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                overflow-x: hidden;
-
-}
-
-.testimonials h3 {
-    color: #333;
-                overflow-x: hidden;
-
-}
-
-.testimonials .fs-1 {
-    font-size: 3rem;
-    color: #007bff;
-                overflow-x: hidden;
-
-}
-
-
-
-
-
-/* News Section */
-.news-section h2 {
-  font-size: 28px;
-              overflow-x: hidden;
-
-}
-
-.news-card h6 {
-  font-size: 16px;
+/* Paragraph Styling */
+.service-content p {
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: #000;
-              overflow-x: hidden;
-
 }
+
+/* List Styling */
+.service-content ul {
+  padding-left: 5%;
+  margin-top: 10px;
+}
+
+.service-content ul li {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Image Styling */
+.img-fluid {
+  border-radius: 8px;
+  width: 100%; /* Ensure responsiveness */
+  height: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Behavior for Odd and Even Services */
+@media (min-width: 768px) {
+  .row:nth-child(odd) .col-lg-6 {
+      order: 2; /* Reverse order for odd services */
+  }
+  .row:nth-child(odd) .col-lg-6:nth-of-type(2) {
+      order: 1;
+  }
+}
+
+
+/* Why Choose Section */
+.why-choose {
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+    margin-top: 15px;
+}
+
+/* Image Column */
+.service-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .service {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .service-content, 
+    .service-image {
+        max-width: 100%;
+    }
+
+    .service-content-heading {
+        justify-content: center;
+    }
+
+    .service-logo {
+        width: 50px;
+    }
+}
+
+
+/* Products Section */
+.products-section {
+  background-color: #f8f9fa;
+}
+
+.products-section .card {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.products-section .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000d51;
+}
+
+.products-section .btn {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  background-color: #000d51;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.products-section .btn:hover {
+  background-color: #0056b3;
+}
+
+.products-section .arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/* Experience Section */
+.experience-section {
+  background: #ffffff;
+}
+
+/* Image Styling */
+.experience-image {
+  max-width: 80%; /* Ensures it scales well */
+  height: auto;
+  border-radius: 10px; /* Optional: Adds a softer look */
+}
+
+/* Title Styling */
+.experience-title {
+  color: #808080;
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Text Styling */
+.experience-text {
+  color: rgba(0, 13, 81, 0.6);
+  font-family: "AlbertSans-SemiBold", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .experience-title {
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  .experience-text {
+      font-size: 1rem;
+      text-align: center;
+  }
+
+  .experience-image {
+      max-width: 100%; /* Allows better scaling */
+  }
+}
+
+
+
 
 /* Footer */
 .footer-section {
@@ -365,218 +454,372 @@
 
 
 <!-- Overview Section -->
- <section class="overview-section">
+<section class="overview-section py-5">
     <div class="container">
-        <div class="content">
-            <div class="overview-content">
-                <div class="overview-image">
-                    <img class="img" src="images/services-overview.jpeg" />
-                </div>
-                
-                <div class="overview-heading">Overview</div>
-                <div
-                class="overview-content-text">
-
-                Nexus Group is a premier provider of tailored services across multiple
-                industries, ensuring unparalleled quality, efficiency, and sophistication.
-                We redefine standards in logistics, cleaning, security, agriculture, air
-                conditioning, and Wi-Fi solutions, delivering elite services designed for
-                modern businesses and luxury clients. With a commitment to excellence,
-                sustainability, and innovation, Nexus Group stands as the hallmark of
-                prestige and precision.
-                </div>
+        <div class="row align-items-start">
+            <!-- Image on the Left -->
+            <div class="col-lg-6 text-center">
+                <img src="images/services-overview.jpeg" alt="Overview Image" class="img-fluid rounded">
             </div>
-        </div>        
-    </div>
- </section>
 
-
- <!-- Services We Offer -->
- <section class="services-section" data-aos="fade-up">
-    <div class="container">
-
-        <div class="services-we-offer">Services We Offer</div>
-
-        <!-- Service 1-->
-        <div class="service" data-aos="fade-right">
-            <div class="service-content">
-                <div class="service-content-heading">
-                    <img src="images/AGRICULTURE.png" alt="Nexus Agriculture Logo" class="service-logo">
-                    <h3>Nexus Agriculture</h3>
-                </div>
-                
-                <p>
-                    Cultivating Opulence – Nexus Agriculture merges sustainability with advanced agricultural 
-                    techniques to produce premium-quality yields while maintaining an eco-conscious approach.
+            <!-- Text on the Right -->
+            <div class="col-lg-6">
+                <h2 class="overview-heading">Overview</h2>
+                <p class="overview-content-text">
+                    Nexus Group is a premier provider of tailored services across multiple
+                    industries, ensuring unparalleled quality, efficiency, and sophistication.
+                    We redefine standards in logistics, cleaning, security, agriculture, air
+                    conditioning, and Wi-Fi solutions, delivering elite services designed for
+                    modern businesses and luxury clients. With a commitment to excellence,
+                    sustainability, and innovation, Nexus Group stands as the hallmark of
+                    prestige and precision.
                 </p>
-                <ul>
-                    <li>✔ Sustainable farming techniques with high-efficiency yields</li>
-                    <li>✔ Precision agriculture technology for optimal growth</li>
-                    <li>✔ Bespoke harvesting solutions tailored to client needs</li>
-                    <li>✔ Organic and eco-friendly practices for responsible farming</li>
-                </ul>
-                <p class="why-choose">We bring sophistication to farming by combining innovation, sustainability, 
-                    and superior crop management, ensuring high-quality, eco-friendly produce.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/farm-agriculture.jpeg" alt="Nexus Agriculture" class="img-fluid">
-            </div>
-        </div><br>
-
-        <!-- Service 2-->
-        <div class="service" data-aos="fade-left">
-            <div class="service-content">
-                <div class="service-content-heading">
-                    <img src="images/LOGISTICS.png" alt="Nexus Logistics Logo" class="service-logo">
-                    <h3>Nexus Logistics</h3>
-                </div>
-                <p>
-                    Precision in Motion – We specialize in seamless and bespoke transportation solutions, ensuring 
-                    every delivery is executed with precision, efficiency, and care.
-                </p>
-                <ul>
-                    <li>✔ Flawless delivery with end-to-end tracking</li>
-                    <li>✔ High-performance, elite fleet of vehicles</li>
-                    <li>✔ Custom-tailored routes for optimal efficiency</li>
-                    <li>✔ Reliable, time-sensitive logistics solutions</li>
-                </ul>
-                <p class="why-choose">Nexus Logistics combines precision, reliability, and luxury, offering logistics 
-                    solutions that meet the highest industry standards while ensuring efficiency and security.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/nexus-logistics.jpeg" alt="Nexus Logistics" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- Service 3-->
-        <div class="service" data-aos="fade-right">
-            <div class="service-content">
-                <div class="service-content-heading">
-                    <img src="images/PRISTINE.png" alt="Nexus Pristine Logo" class="service-logo">
-                    <h3>Nexus Pristine</h3>
-                </div>
-                <p>
-                    The Art of Immaculate Living – Elite cleaning services that redefine hygiene and luxury, 
-                    creating flawless, polished environments.
-                </p>
-                <ul>
-                    <li>✔ White-glove cleaning for ultra-premium spaces</li>
-                    <li>✔ Eco-luxe, non-toxic cleaning products</li>
-                    <li>✔ Specialized deep-cleaning services for homes and businesses</li>
-                    <li>✔ Expert-trained staff delivering unmatched excellence</li>
-                </ul>
-                <p class="why-choose">Nexus Pristine blends sophistication with eco-conscious practices to create 
-                    spotless, refined spaces.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/nexus-pristine.jpeg" alt="Nexus Pristine" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- Service 4-->
-        <div class="service" data-aos="fade-left">
-            <div class="service-content">
-                <div class="service-content-heading">
-                    <img src="images/SHIELD.png" alt="Nexus Shield Logo" class="service-logo">
-                    <h3>Nexus Shield</h3>
-                </div>
-                <p>
-                    Guardians of Prestige – Providing top-tier security solutions for high-end estates, 
-                    corporate offices, and exclusive properties.
-                </p>
-                <ul>
-                    <li>✔ Highly trained security personnel with elite expertise</li>
-                    <li>✔ Discreet, round-the-clock surveillance and protection</li>
-                    <li>✔ Advanced security systems and risk assessment strategies</li>
-                    <li>✔ Tailored defense plans for homes, businesses, and events</li>
-                </ul>
-                <p class="why-choose">We redefine security by blending discretion with cutting-edge technology, 
-                    ensuring a seamless yet formidable safeguard.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/nexus-security.jpeg" alt="Nexus Shield" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- Service 5-->
-        <div class="service" data-aos="fade-right">
-            <div class="service-content">
-                <div class="service-content-heading">
-                    <img src="images/AIR.png" alt="Nexus Air Logo" class="service-logo">
-                    <h3>Nexus Air</h3>
-                </div>
-                <p>
-                    Climate Mastery Redefined – Specializing in premium air conditioning solutions for homes, 
-                    businesses, and luxury spaces.
-                </p>
-                <ul>
-                    <li>✔ High-performance air conditioning for all spaces</li>
-                    <li>✔ Silent, energy-efficient cooling technology</li>
-                    <li>✔ Custom-tailored climate control solutions</li>
-                    <li>✔ Professional installation and maintenance services</li>
-                </ul>
-                <p class="why-choose">We create refined indoor atmospheres with precision-engineered climate control, 
-                    ensuring ultimate comfort and luxury.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/nexus-air.jpeg" alt="Nexus Air" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- Service 6-->
-        <div class="service" data-aos="fade-left">
-            <div class="service-content">
-                <div class="service-content-heading">
-                    <img src="images/CONNECT.png" alt="Nexus Connect Logo" class="service-logo">
-                    <h3>Nexus Connect</h3>
-                </div>
-                <p>
-                    Seamless Connectivity, Elevated – Delivering sophisticated Wi-Fi installation solutions 
-                    ensuring uninterrupted high-speed connectivity.
-                </p>
-                <ul>
-                    <li>✔ Ultra-fast, reliable internet connectivity</li>
-                    <li>✔ Bespoke networking solutions for homes and businesses</li>
-                    <li>✔ Advanced security and seamless integration with smart devices</li>
-                    <li>✔ Expert installation with ongoing technical support</li>
-                </ul>
-                <p class="why-choose">We provide high-end connectivity solutions designed for modern living, 
-                    ensuring businesses and luxury residences stay seamlessly connected.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/nexus-conn.jpeg" alt="Nexus Connect" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
 
 
-<!-- Products -->
 
+
+<!-- Services We Offer -->
+<section class="services-section py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+        <!-- Title -->
+        <h2 class="services-we-offer-section-title text-center mb-5">Services We Offer</h2>
+
+        <!-- Service 1 -->
+        <div class="row align-items-start mb-5" data-aos="fade-right">
+            <!-- Service Content Heading -->
+            <div class="col-12 text-center mb-4">
+                <div class="service-content-heading d-flex justify-content-center align-items-center">
+                    <img src="images/AGRICULTURE.png" alt="Nexus Agriculture Logo" class="service-logo me-3">
+                    <h3 class="mb-0">Nexus Agriculture</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <p>
+                        Cultivating Opulence – Nexus Agriculture merges sustainability with advanced agricultural 
+                        techniques to produce premium-quality yields while maintaining an eco-conscious approach.
+                    </p>
+                    <ul>
+                        <li>✔ Sustainable farming techniques with high-efficiency yields</li>
+                        <li>✔ Precision agriculture technology for optimal growth</li>
+                        <li>✔ Bespoke harvesting solutions tailored to client needs</li>
+                        <li>✔ Organic and eco-friendly practices for responsible farming</li>
+                    </ul>
+                    <p class="why-choose">
+                        We bring sophistication to farming by combining innovation, sustainability, 
+                        and superior crop management, ensuring high-quality, eco-friendly produce.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/farm-agriculture.jpeg" alt="Nexus Agriculture" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="row align-items-start mb-5" data-aos="fade-left">
+            <!-- Service Content Heading -->
+            <div class="col-12 text-center mb-4">
+                <div class="service-content-heading d-flex justify-content-center align-items-center">
+                    <img src="images/LOGISTICS.png" alt="Nexus Logistics Logo" class="service-logo me-3">
+                    <h3 class="mb-0">Nexus Logistics</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <p>
+                        Precision in Motion – We specialize in seamless and bespoke transportation solutions, ensuring 
+                        every delivery is executed with precision, efficiency, and care.
+                    </p>
+                    <ul>
+                        <li>✔ Flawless delivery with end-to-end tracking</li>
+                        <li>✔ High-performance, elite fleet of vehicles</li>
+                        <li>✔ Custom-tailored routes for optimal efficiency</li>
+                        <li>✔ Reliable, time-sensitive logistics solutions</li>
+                    </ul>
+                    <p class="why-choose">
+                        Nexus Logistics combines precision, reliability, and luxury, offering logistics 
+                        solutions that meet the highest industry standards while ensuring efficiency and security.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/nexus-logistics.jpeg" alt="Nexus Logistics" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="row align-items-start mb-5" data-aos="fade-right">
+            <!-- Service Content Heading -->
+            <div class="col-12 text-center mb-4">
+                <div class="service-content-heading d-flex justify-content-center align-items-center">
+                    <img src="images/PRISTINE.png" alt="Nexus Pristine Logo" class="service-logo me-3">
+                    <h3 class="mb-0">Nexus Pristine</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <p>
+                        The Art of Immaculate Living – Elite cleaning services that redefine hygiene and luxury, 
+                        creating flawless, polished environments.
+                    </p>
+                    <ul>
+                        <li>✔ White-glove cleaning for ultra-premium spaces</li>
+                        <li>✔ Eco-luxe, non-toxic cleaning products</li>
+                        <li>✔ Specialized deep-cleaning services for homes and businesses</li>
+                        <li>✔ Expert-trained staff delivering unmatched excellence</li>
+                    </ul>
+                    <p class="why-choose">
+                        Nexus Pristine blends sophistication with eco-conscious practices to create 
+                        spotless, refined spaces.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/nexus-pristine.jpeg" alt="Nexus Pristine" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="row align-items-start mb-5" data-aos="fade-left">
+            <!-- Service Content Heading -->
+            <div class="col-12 text-center mb-4">
+                <div class="service-content-heading d-flex justify-content-center align-items-center">
+                    <img src="images/SHIELD.png" alt="Nexus Shield Logo" class="service-logo me-3">
+                    <h3 class="mb-0">Nexus Shield</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <p>
+                        Guardians of Prestige – Providing top-tier security solutions for high-end estates, 
+                        corporate offices, and exclusive properties.
+                    </p>
+                    <ul>
+                        <li>✔ Highly trained security personnel with elite expertise</li>
+                        <li>✔ Discreet, round-the-clock surveillance and protection</li>
+                        <li>✔ Advanced security systems and risk assessment strategies</li>
+                        <li>✔ Tailored defense plans for homes, businesses, and events</li>
+                    </ul>
+                    <p class="why-choose">
+                        We redefine security by blending discretion with cutting-edge technology, 
+                        ensuring a seamless yet formidable safeguard.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/nexus-security.jpeg" alt="Nexus Shield" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="row align-items-start mb-5" data-aos="fade-right">
+            <!-- Service Content Heading -->
+            <div class="col-12 text-center mb-4">
+                <div class="service-content-heading d-flex justify-content-center align-items-center">
+                    <img src="images/AIR.png" alt="Nexus Air Logo" class="service-logo me-3">
+                    <h3 class="mb-0">Nexus Air</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <p>
+                        Climate Mastery Redefined – Specializing in premium air conditioning solutions for homes, 
+                        businesses, and luxury spaces.
+                    </p>
+                    <ul>
+                        <li>✔ High-performance air conditioning for all spaces</li>
+                        <li>✔ Silent, energy-efficient cooling technology</li>
+                        <li>✔ Custom-tailored climate control solutions</li>
+                        <li>✔ Professional installation and maintenance services</li>
+                    </ul>
+                    <p class="why-choose">
+                        We create refined indoor atmospheres with precision-engineered climate control, 
+                        ensuring ultimate comfort and luxury.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/nexus-air.jpeg" alt="Nexus Air" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="row align-items-start mb-5" data-aos="fade-left">
+            <!-- Service Content Heading -->
+            <div class="col-12 text-center mb-4">
+                <div class="service-content-heading d-flex justify-content-center align-items-center">
+                    <img src="images/CONNECT.png" alt="Nexus Connect Logo" class="service-logo me-3">
+                    <h3 class="mb-0">Nexus Connect</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <p>
+                        Seamless Connectivity, Elevated – Delivering sophisticated Wi-Fi installation solutions 
+                        ensuring uninterrupted high-speed connectivity.
+                    </p>
+                    <ul>
+                        <li>✔ Ultra-fast, reliable internet connectivity</li>
+                        <li>✔ Bespoke networking solutions for homes and businesses</li>
+                        <li>✔ Advanced security and seamless integration with smart devices</li>
+                        <li>✔ Expert installation with ongoing technical support</li>
+                    </ul>
+                    <p class="why-choose">
+                        We provide high-end connectivity solutions designed for modern living, 
+                        ensuring businesses and luxury residences stay seamlessly connected.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/nexus-conn.jpeg" alt="Nexus Connect" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Products Section -->
+<section class="products-section py-5 bg-light">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="row text-center mb-4">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h2 class="text-primary fw-semibold">Products</h2>
+          <p class="text-secondary">
+            We also offer our products at affordable bargain prices
+          </p>
+        </div>
+      </div>
+  
+      <!-- Product Cards -->
+      <div class="row gy-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card border-0 shadow h-100">
+            <div
+              class="card-img-top"
+              style="
+                background: url('images/product-1.jpeg') center;
+                background-size: cover;
+                height: 200px;
+              "
+            ></div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-dark">Marketing Strategy</h5>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary d-flex align-items-center">
+                  Details
+                  <img class="ms-2 arrow-icon" src="images/arrow-right.svg" alt="Arrow Icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card border-0 shadow h-100">
+            <div
+              class="card-img-top"
+              style="
+                background: url('images/product-blue.jpeg') center;
+                background-size: cover;
+                height: 200px;
+              "
+            ></div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-dark">Financial Management</h5>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary d-flex align-items-center">
+                  Details
+                  <img class="ms-2 arrow-icon" src="images/arrow-right.svg" alt="Arrow Icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card border-0 shadow h-100">
+            <div
+              class="card-img-top"
+              style="
+                background: url('images/product-pink.jpeg') center;
+                background-size: cover;
+                height: 200px;
+              "
+            ></div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-dark">Business Strategy</h5>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary d-flex align-items-center">
+                  Details
+                  <img class="ms-2 arrow-icon" src="images/arrow-right.svg" alt="Arrow Icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- View All Products -->
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <a href="#" class="text-primary text-decoration-underline fw-semibold">
+            All Products >>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
   
 
+<!-- Experience Unmatched Service Section -->
+<section class="experience-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6 text-center">
+                <img src="images/nexus-experience.jpeg" alt="Experience Unmatched Service" class="experience-image img-fluid">
+            </div>
 
-
-<section>
-    
-    <div class="we-work-with-you-to-make-your-vision-a-reality">
-        <img class="img" src="images/nexus-experimemnts.jpeg" />
-        <div class="experience-unmatched-service-with-nexus-group">
-          Experience Unmatched Service with Nexus Group
-        </div>
-        <div
-          class="nexus-guarantee">
-          At Nexus Group, we go beyond expectations to deliver bespoke, premium
-          solutions across multiple industries. Whether you need elite security,
-          flawless logistics, pristine cleaning, or advanced technology solutions, we
-          tailor our services to match the highest standards of excellence.
-          <br />
-          Get in touch today and experience the future of tailored luxury!
+            <!-- Content Column -->
+            <div class="col-md-6">
+                <h2 class="experience-title">Experience Unmatched Service with Nexus Group</h2>
+                <p class="experience-text">
+                    At Nexus Group, we go beyond expectations to deliver bespoke, premium solutions across multiple industries. 
+                    Whether you need elite security, flawless logistics, pristine cleaning, or advanced technology solutions, 
+                    we tailor our services to match the highest standards of excellence.
+                </p>
+                <p class="experience-text">
+                    Get in touch today and experience the future of tailored luxury!
+                </p>
+            </div>
         </div>
     </div>
- 
 </section>
+
+
   
 
 
