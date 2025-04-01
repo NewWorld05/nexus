@@ -13,6 +13,9 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/logo-nexus.png">
+
 
 <style>
   /* Custom CSS */
@@ -246,6 +249,13 @@
                 overflow-x: hidden;
 
   }
+
+  @media (max-width: 768px) {
+    .footer-section .row > div {
+        text-align: center;
+      }
+  }
+
 </style>
 </head>
 
@@ -254,7 +264,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" id="navbar">
       <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
               <img src="images/logo-nexus.png" alt="Logo" width="70"> <!-- Replace with your logo -->
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -266,16 +276,16 @@
                   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                   <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                   <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
                   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html" style="border: 1px solid white;">Get in Touch</a>
-                  </li>
               </ul>
+              <!-- Get in Touch button moved to the right -->
+              <a href="contact.html" class="btn btn-outline-light ms-3">Get in Touch</a>
           </div>
       </div>
-  </nav>
+    </nav>
 
 
 
@@ -342,8 +352,11 @@
               <div class="card border-0 shadow-sm">
                   <img src="images/polokwane.jpeg" class="card-img-top" alt="Polokwane Office">
                   <div class="card-body text-center">
-                      <h5 class="card-title">Polokwane</h5>
-                      <p class="card-text">7914 Lees Creek St. Dayton, OH 45420</p>
+                      <h5 class="card-title">Piet Retief</h5>
+                      <p class="card-text">
+                        MKHONDO 2389
+                        39 CHURCH STREET
+                        PIET RETIEF</p>
                       <p class="card-text">romeo@nexus.co.za</p>
                       <p class="card-text">(071) 267-3634</p>
                   </div>
@@ -367,7 +380,11 @@
                   <img src="images/durban.jpeg" class="card-img-top" alt="Durban Office">
                   <div class="card-body text-center">
                       <h5 class="card-title">Durban</h5>
-                      <p class="card-text">8592 Fairground St. Tallahassee, FL 32303</p>
+                      <p class="card-text">
+                        49 ML SULTAN ROAD
+                        GREYVILLE
+                        BEREA
+                        4001</p>
                       <p class="card-text">james@nexus.net</p>
                       <p class="card-text">(060) 476-4400</p>
                   </div>
@@ -381,67 +398,69 @@
   <!-- Footer Section -->
   <footer class="footer-section text-white pt-5 pb-4" data-aos="fade-up">
     <div class="container">
-      <div class="row">
-        <!-- Logo and About -->
-        <div class="col-md-3 mb-4" data-aos="fade-right">
-          <img src="images/logo-nexus.png" alt="Logo" class="mb-3" width="70" />
-          <p>
-            Velit facilisi senectus velit elementum. Consequat vel arcu feugiat dui eu tempor pretium at porta.
-            Dui pellentesque sagittis...
-          </p>
-          <p class="fw-bold mb-1">Subscribe Us</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook text-white me-3"></i></a>
-            <a href="#"><i class="fab fa-instagram text-white me-3"></i></a>
-            <a href="#"><i class="fab fa-twitter text-white"></i></a>
+        <div class="row">
+            <!-- Logo and About -->
+            <div class="col-md-3 mb-4" data-aos="fade-right">
+                <img src="images/logo-nexus.png" alt="Logo" class="mb-3" width="70" />
+                <p>
+                  Innovating solutions, elevating standards – Nexus Group, your trusted partner in excellence.
+                </p>
+                <p class="fw-bold mb-1">Subscribe Us</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/share/1MupV9y4N6/?mibextid=qi2Omg"><i class="fab fa-facebook text-white me-3"></i></a>
+                  <a href="#"><i class="fab fa-instagram text-white me-3"></i></a>
+                  <a href="https://x.com/nexus_group1?t=160rPQgO_MRpGdW_gVoulw&s=08"><i class="fab fa-twitter text-white me-3"></i></a>
+                  <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp text-white"></i></a>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-2 mb-4" data-aos="fade-up">
+                <h6 class="fw-bold">Services</h6>
+                <ul class="list-unstyled">
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">Agriculture</a></li>
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">Logistics</a></li>
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">Cleaning</a></li>
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">Security</a></li>
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">Air Conditioning</a></li>
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">WiFi Installation</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-md-2 mb-4" data-aos="fade-up">
+                <h6 class="fw-bold">Useful links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    <li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                    <li><a href="products.html" class="text-white-50 text-decoration-none">Products</a></li>
+                    <li><a href="projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
+                    <li><a href="FAQ.html" class="text-white-50 text-decoration-none">F.A.Q</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Address -->
+            <div class="col-md-3 mb-4" data-aos="fade-left">
+              <h6 class="fw-bold">Address</h6>
+              <p class="text-white-50 mb-1">49 ML Sultan Road, Greyville, Berea, 4001</p>
+              <p class="text-white-50 mb-1">Durban, 32303</p>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-2 mb-4" data-aos="fade-left">
+              <h6 class="fw-bold">Email</h6>
+              <p class="text-white-50">nexusgroup2005@gmail.com</p>
+              <h6 class="fw-bold mt-3">Phone</h6>
+              <p class="text-white-50">(071) 267-3634</p>
           </div>
         </div>
 
-        <!-- Services -->
-        <div class="col-md-2 mb-4" data-aos="fade-up">
-          <h6 class="fw-bold">Services</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50 text-decoration-none">Agriculture</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Logistics</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Cleaning</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Security</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Air Conditioning</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">WiFi Installation</a></li>
-          </ul>
+        <div class="text-center mt-4 border-top pt-3 text-white-50 small">
+            ©Copyright Nexus Group Premium 2025 | All rights reserved | Powered by 
+            <a href="https://kzdsolutions.co.za" class="text-white-50">KZDSolutions</a>
         </div>
-
-        <!-- Useful Links -->
-        <div class="col-md-2 mb-4" data-aos="fade-up">
-          <h6 class="fw-bold">Useful links</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Projects</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">F.A.Q</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Address -->
-        <div class="col-md-3 mb-4" data-aos="fade-left">
-          <h6 class="fw-bold">Address</h6>
-          <p class="text-white-50 mb-1">8592 Fairground</p>
-          <p class="text-white-50 mb-1">Durban, 32303</p>
-        </div>
-
-        <!-- Contact -->
-        <div class="col-md-2 mb-4" data-aos="fade-left">
-          <h6 class="fw-bold">Email</h6>
-          <p class="text-white-50">nexus@gmail.com</p>
-          <h6 class="fw-bold mt-3">Phone</h6>
-          <p class="text-white-50">(071) 267-3634</p>
-        </div>
-      </div>
-
-      <div class="text-center mt-4 border-top pt-3 text-white-50 small">
-        ©Copyright Nexus Group Premium 2025 | All rights reserved | Powered by 
-        <a href="https://kzdsolutions.co.za" class="text-white-50">KZDSolutions</a>
-      </div>
     </div>
   </footer>
 
